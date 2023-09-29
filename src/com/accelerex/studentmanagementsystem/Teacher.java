@@ -6,7 +6,9 @@ class Teacher extends Person{
         super(id, name, age, address);
         this.specialization = specialization;
     }
+    @Override
     public void displayInfo() {
+        super.displayInfo();
         System.out.println("Teacher ID: " + getId());
         System.out.println("Name: " + getName());
         System.out.println("Age: " + getAge());

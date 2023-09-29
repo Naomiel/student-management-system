@@ -30,4 +30,12 @@ public class Person {
     public String getAddress() {
         return address;
     }
+
+    public void displayInfo() {
+        System.out.println("ID: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Address: " + address);
+
+    }
 }
