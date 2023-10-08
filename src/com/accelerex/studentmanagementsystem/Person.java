@@ -2,10 +2,10 @@ package com.accelerex.studentmanagementsystem;
 
 public class Person {
     //class for Person
-    private int id;
-    private String name;
-    private int age;
-    private String address;
+    int id;
+    String name;
+    int age;
+    String address;
 
     public Person(int id, String name, int age, String address) {
         this.id = id;
