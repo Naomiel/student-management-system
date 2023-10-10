@@ -25,11 +25,8 @@ class Teacher extends Person {
 
     // Method to handle user input for teacher specialization with exception handling
     public void takeInput() {
-        try {
-            System.out.print("Enter teacher's specialization: ");
-            specialization = scanner.nextLine();
-        } catch (Exception e) {
-            System.out.println("Error: Invalid input. Please try again.");
-        }
+        System.out.print("Enter teacher's specialization: ");
+        specialization = scanner.nextLine();
+        System.out.println("Error: Invalid input. Please try again.");
     }
 }

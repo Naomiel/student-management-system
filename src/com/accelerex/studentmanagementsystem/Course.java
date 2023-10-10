@@ -47,12 +47,10 @@ public class Course {
 
     // Method to set the instructor with exception handling
     public void setInstructor() {
-        try {
             System.out.print("Enter instructor: ");
             instructor = scanner.nextLine();
-        } catch (Exception e) {
             System.out.println("Error: Invalid input. Please try again.");
-        }
+
     }
 
     // Method to display course information

@@ -37,7 +37,6 @@ class Student extends Person {
 
     // Method to handle user input with exception handling
     public void takeInput() {
-        try {
             System.out.print("Enter student's ID: ");
             int id = scanner.nextInt();
             scanner.nextLine(); // Consume the newline character
@@ -54,8 +53,6 @@ class Student extends Person {
             this.name = name;
             this.age = age;
             this.address = address;
-        } catch (Exception e) {
             System.out.println("Error: Invalid input. Please try again.");
-        }
     }
 }

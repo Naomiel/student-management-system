@@ -31,13 +31,10 @@ public class Grade {
 
     // Method to set the score with exception handling
     public void setScore() {
-        try {
-            System.out.print("Enter the score for " + student.getName() + " in course " + course.getTitle() + ": ");
-            score = scanner.nextDouble();
-        } catch (Exception e) {
-            System.out.println("Error: Invalid input. Please enter a valid score.");
-            scanner.nextLine(); // Consume the invalid input
-            setScore(); // Retry setting the score
-        }
+        System.out.print("Enter the score for " + student.getName() + " in course " + course.getTitle() + ": ");
+        score = scanner.nextDouble();
+        System.out.println("Error: Invalid input. Please enter a valid score.");
+        scanner.nextLine(); // Consume the invalid input
+        setScore(); // Retry setting the score
     }
 }
